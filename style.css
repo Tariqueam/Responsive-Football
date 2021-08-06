@@ -4,7 +4,8 @@
 
 /* common styles */
 
-html, body {
+html,
+body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
@@ -165,7 +166,6 @@ html, body {
   height: 427px;
 }
 
-
 /* latest news section */
 .latest-news h1 {
   font-size: 30px;
@@ -198,7 +198,6 @@ html, body {
 h4 {
   color: black;
 }
-}
 .card-detail {
   text-align: center;
   font-size: 15px;
@@ -211,27 +210,27 @@ h4 {
 
 /* club news section */
 .club-news {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #2d25a0;
-    height: 350px;
-  }
-  .club-news h1 {
-    font-size: 50px;
-    color: white;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-  }
-  .club-news p {
-    font-size: 30px;
-    color: gainsboro;
-    margin: 0;
-  }
-  .news-form {
-    display: flex;
-    margin-top: 40px;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2d25a0;
+  /* height: 350px; */
+}
+.club-news h1 {
+  font-size: 50px;
+  color: white;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+.club-news p {
+  font-size: 30px;
+  color: gainsboro;
+  margin: 0;
+}
+.news-form {
+  display: flex;
+  margin: 40px;
+}
 
 /* footer section */
 
@@ -263,32 +262,62 @@ footer {
 }
 /* Media Queries */
 
-@media only screen and (max-width: 688px){
-    .container{
-        width: 100%;
-    }
-    .navber{
-        display: none;
-    }
-    .top-section-element{
-        display: flex;
-        flex-direction: column;
-    }
-    .top-section-heading{
-        font-size: 3rem;
-        line-height: 4rem;
-    }
-    .half-width{
-        padding: 1rem 0;
-        margin: 0 1rem 0 0;
-    }
-    .half-width img{
-        max-width: 100%;
-        height: 16rem;
-    }
-    .players, .latest-news, .club-news, .bottom-section, .footer{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 0 auto;
-    }
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .navber {
+    display: none;
+  }
+  .top-section-element {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-section-heading {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .half-width {
+    padding: 1rem 0;
+    margin: 0 1rem 0 0;
+  }
+  .half-width img {
+    max-width: 100%;
+    height: 16rem;
+  }
+  .news-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .club-news {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem, 0;
+    text-align: center;
+  }
+  .club-news h1 {
+    font-size: 2rem;
+  }
+  .club-news p {
+    font-size: 1rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .main-logo {
+    width: 15rem;
+  }
+
+  .players,
+  .latest-news,
+  .bottom-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
 }
