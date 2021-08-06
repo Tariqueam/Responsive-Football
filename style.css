@@ -108,9 +108,9 @@ body {
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  margin-top: 60px;
+  grid-row-gap: 2rem;
+  margin-top: 4rem;
+  justify-items: center;
 }
 
 .player {
